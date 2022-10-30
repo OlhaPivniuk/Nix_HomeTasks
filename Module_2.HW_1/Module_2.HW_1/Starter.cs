@@ -26,7 +26,7 @@ namespace Module2HW1
                 if (resultOfRandomMethod.Status == false)
 
                 {
-                    logger.WriteLog($"Action failed by а reason: {resultOfRandomMethod.ErrorMessage}", LogType.Error);
+                    logger.WriteLog($"Action failed by a reason: {resultOfRandomMethod.ErrorMessage}", LogType.Error);
                 }
             }
             logger.Save();
