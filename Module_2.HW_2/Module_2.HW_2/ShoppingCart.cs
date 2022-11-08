@@ -15,12 +15,8 @@ namespace Module_2.HW_2
         public User User { get; private set; }
         private Product Product { get; set; }
         private int Quantity { get; set; }
-        public float TotalValue { get; set; }        
+        public float TotalValue { get; set; }             
         
-        public ShoppingCart()
-        {
-           
-        }
         public void AddProduct(Product product)
         {
             _products[Quantity] = product;
