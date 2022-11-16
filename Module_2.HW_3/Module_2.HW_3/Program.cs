@@ -19,7 +19,7 @@ namespace Module_2.HW_3
             Console.Write(salad);
             Console.WriteLine(l);
 
-            Console.WriteLine("Total calories in your salad: " + salad.СountsСalories());
+            Console.WriteLine("Total calories in your salad: " + salad.СountСalories());
             Console.WriteLine(l);
            
             salad._Salad.Sort();
@@ -27,7 +27,7 @@ namespace Module_2.HW_3
             Console.Write(salad);
             Console.WriteLine(l);
             
-            salad.WriteToFiles("output.txt");
+            salad.WriteToFile("output.txt");
             
             double lowerLimit;
             Console.Write("Enter your lower calorie limit: ");

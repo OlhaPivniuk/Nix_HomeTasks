@@ -6,6 +6,6 @@ namespace Module_2.HW_3.Interface
 {
     public interface IWriteToFiles
     {
-        void WriteToFiles(string fileName);
+        void WriteToFile(string fileName);
     }
 }

@@ -19,7 +19,7 @@ namespace Module_2.HW_3.Model
             {
                 while ((str = reader.ReadLine()) != null)
                 {
-                    string[] words = LineBreaker.ReturnWordArr(' ', str, 0);
+                    string[] words = LineBreaker.WordsArr(' ', str, 0);
                     _Salad.Add(new Vegetable(words[0], words[1], words[2], words[3]));
                 }
             }
@@ -33,15 +33,15 @@ namespace Module_2.HW_3.Model
             }
             return str;
         }
-        public void WriteToFiles(string fileName)
+        public void WriteToFile(string fileName)
         {
             using (StreamWriter writer = new StreamWriter(fileName))
             {
                 writer.Write(ToString());
-                writer.WriteLine("Calories in salad: " + СountsСalories());
+                writer.WriteLine("Calories in salad: " + СountСalories());
             }
         }
-        public int СountsСalories()
+        public int СountСalories()
         {
             int _caloricity = 0;
             foreach (Vegetable vegatable in _Salad)

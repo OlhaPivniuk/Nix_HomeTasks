@@ -7,7 +7,7 @@ namespace Module_2.HW_3.Breaker
 {
     public class LineBreaker
     {
-        static public string[] ReturnWordArr(char symbol, string str, short index)
+        static public string[] WordsArr(char symbol, string str, short index)
         {
             return str.Split(new char[] { symbol }, StringSplitOptions.RemoveEmptyEntries).Skip(index).ToArray();
         }
