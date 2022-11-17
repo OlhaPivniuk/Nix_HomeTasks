@@ -14,7 +14,7 @@ namespace Module_2.HW_6
     {
         static void Main(string[] args)
         {
-            string line = "---------------------------------------------";     
+            string line = "--------------------------------------------";     
             var toasterFactory = new ToasterFactory();
             var dishwasherFactory = new DishwasherFactory();
 
