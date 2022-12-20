@@ -19,7 +19,7 @@ namespace Module_3.HW_3
             var class1 = new Class1();
             var program = new Program();
             Pow powDelegate = class1.Pow;
-            var calculationResult = class2.Calc(powDelegate, 12, 6);
+            var calculationResult = class2.Calc(powDelegate, 24, 4);
             var result = calculationResult.Invoke(24);
             program.Show(result);
         }
